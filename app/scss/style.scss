@@ -24,8 +24,6 @@
    align-items: center;
    justify-content: space-between;
 }
-.menu__logo {
-}
 .menu__list {
    display: flex;
    justify-content: space-between;
@@ -132,8 +130,7 @@
 .service__title::after {
    right: 20%;
 }
-.title {
-}
+
 .service__inner {
    display: flex;
    justify-content: space-between;
@@ -161,8 +158,6 @@
    line-height: 18px;
    height: 70px;
 }
-.service__item-sun {
-}
 .service__item-sun::before {
    background-image: url("../images/school/1.svg");
    content: "";
@@ -172,8 +167,6 @@
    width: 55px;
    height: 50px;
 }
-.service__item-plane {
-}
 .service__item-plane::before {
    background-image: url("../images/school/2.svg");
    content: "";
@@ -182,8 +175,6 @@
    top: 0;
    width: 50px;
    height: 50px;
-}
-.service__item-surf {
 }
 .service__item-surf::before {
    background-image: url("../images/school/3.svg");
