@@ -19,6 +19,47 @@
    padding-top: 35px;
    padding-right: 224px;
 }
+.burger{
+  display: none;
+  background: none;
+  border: none;
+
+  cursor: pointer;
+  padding: 9px 2px;
+}
+
+.burger__item{
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+
+  font-size: 0;
+  color: transparent;
+
+  position: relative;
+}
+
+.burger__item:before,
+.burger__item:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  z-index: 1;
+
+  background-color: #fff;
+}
+
+.burger__item:before{
+  top: -8px;
+}
+
+.burger__item:after{
+  bottom: -8px;
+}
 .menu__inner {
    display: flex;
    align-items: center;
@@ -246,7 +287,7 @@
 }
 
 .gallery {
-   padding-bottom: 200px;
+   padding: 200px 0;
 }
 .gallery-btn {
    background-color: transparent;
@@ -359,7 +400,7 @@
    padding: 315px 0 370px;
 }
 .slider__item {
-   width: 600px;
+   max-width: 600px;
    margin-left: auto;
 }
 .slider__title {
@@ -398,4 +439,161 @@
 }
 .team__prof {
    color: $text;
+}
+
+.price {
+   background-color: $bg;
+   padding: 200px 0;
+}
+.price__title {
+   margin-bottom: 185px;
+}
+.price__inner {
+   display: flex;
+   justify-content: space-between;
+}
+.price__item {
+   width: 360px;
+   background: #fff;
+   padding: 45px 30px 160px;
+   position: relative;
+}
+.price__item-title {
+   font-size: 36px;
+   line-height: 40px;
+   color: $title;
+   margin-bottom: 58px;
+   text-align: center;
+}
+.price__item-menu {
+   color: $text;
+}
+.price__item-menu li {
+   margin-bottom: 20px;
+}
+.price__item-sum {
+   position: absolute;
+   top: 90%;
+   bottom: 45px;
+   right: 0;
+   left: 0;
+   font-size: 36px;
+   line-height: 40px;
+   color: $title;
+   text-align: center;
+}
+.price__item-sum span {
+   margin-left: 5px;
+   font-size: 18px;
+   line-height: 22px;
+}
+
+.section--map {
+   padding: 200px;
+}
+.map {
+   height: 640px;
+   background: url("../images/map/map.png") no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+.map__title {
+}
+.map__pin {
+   position: absolute;
+   top: 15%;
+   left: 48%;
+}
+
+.connection__title {
+   margin-bottom: 240px;
+}
+.connection__inner {
+   display: flex;
+   justify-content: space-between;
+}
+.connection__form {
+   min-width: 570px;
+   color: $green;
+}
+.connection__form input,
+.connection__form textarea {
+   border: none;
+   border-bottom: 2px solid #dadada;
+   display: block;
+   width: 100%;
+   padding: 16px 0;
+   margin-bottom: 32px;
+}
+.connection__form input::placeholder,
+.connection__form textarea::placeholder {
+   font-size: 18px;
+   color: $green;
+}
+.connection__form textarea {
+   min-height: 155px;
+   resize: none;
+}
+.connection__form button {
+   font-size: 24px;
+   color: $text;
+   padding: 24px 111px;
+   border: 1px solid #c4c4c4;
+   cursor: pointer;
+   background-color: #fff;
+   text-transform: uppercase;
+   margin-top: 73px;
+}
+.connection__contact {
+   font-size: 24px;
+   line-height: 30px;
+   color: $text;
+   padding: 50px 230px 70px 50px;
+   background-color: $bg;
+   margin-left: 30px;
+}
+.contact__question {
+   margin-bottom: 65px;
+}
+.contact__tlf {
+   margin-bottom: 65px;
+}
+.contact__tlf a {
+   color: $text;
+}
+.contact__tlf a:hover {
+   text-decoration: underline;
+}
+.contact__address {
+}
+
+.social {
+   padding: 200px 0;
+}
+.social__inner {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.social__item {
+   margin: 0 5px;
+}
+.social__item a {
+   font-size: 24px;
+   color: $text;
+   text-transform: uppercase;
+}
+.social__item a:hover{
+   color: $green;
+}
+
+.footer {
+   background-color: $green;
+}
+.footer__logo {
+   padding: 70px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }

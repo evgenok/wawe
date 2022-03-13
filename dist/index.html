@@ -22,28 +22,31 @@
    <header class="header">
       <div class="container">
          <nav class="menu">
+            <button class="burger" type="button">
+               <span class="burger__item">Menu</span>
+            </button>
             <div class="menu__inner">
                <div class="menu__logo">
                   <a href=""><img src="images/header/logo.png" alt="logo"></a>
                </div>
                <ul class="menu__list">
                   <li class="menu__list-item">
-                     <a href="#">О нас</a>
+                     <a href="#about">О нас</a>
                   </li>
                   <li class="menu__list-item">
-                     <a href="#">Услуги</a>
+                     <a href="#service">Услуги</a>
                   </li>
                   <li class="menu__list-item">
-                     <a href="#">Стоимость</a>
+                     <a href="#price">Стоимость</a>
                   </li>
                   <li class="menu__list-item">
-                     <a href="#">Блог</a>
+                     <a href="#gallery">Блог</a>
                   </li>
                   <li class="menu__list-item">
-                     <a href="#">Команда</a>
+                     <a href="#team">Команда</a>
                   </li>
                   <li class="menu__list-item">
-                     <a href="#">Контакты</a>
+                     <a href="#connection">Контакты</a>
                   </li>
                </ul>
             </div>
@@ -62,7 +65,7 @@
       </div>
    </header>
 
-   <section class="about">
+   <section class="about" id="about">
       <div class="container">
          <div class="title about__title ">
             О ШКОЛЕ, О СЕРФИНГЕ, О КАНАРАХ
@@ -119,7 +122,7 @@
       </div>
    </section>
 
-   <section class="service">
+   <section class="service" id="service">
       <div class="container">
          <div class="service__title title">
             В ШКОЛЕ ВЫ ПОЛУЧИТЕ
@@ -221,7 +224,7 @@
       </div>
    </section>
 
-   <section class="gallery">
+   <section class="gallery" id="gallery">
       <div class="container">
          <div class="gallery__title title">ГАЛЕРЕЯ</div>
          <button class="gallery-btn" data-filter="all">ВСЕ</button>
@@ -393,7 +396,7 @@
       </div>
    </section>
 
-   <section class="team">
+   <section class="team" id="team">
       <div class="container">
          <div class="title team__title">
             НАША КОМАНДА
@@ -432,7 +435,7 @@
       </div>
    </section>
 
-   <section class="price">
+   <section class="price" id="price">
       <div class="container">
          <div class="price__title title">ПАКЕТЫ УСЛУГ</div>
          <div class="price__inner">
@@ -453,10 +456,112 @@
                   <span>$</span>
                </div>
             </div>
+            <div class="price__item">
+               <div class="price__item-title">
+                  Все включено
+               </div>
+               <ul class="price__item-menu">
+                  <li>Проживание на вилле 6 ночей</li>
+                  <li>Номер категории стандарт</li>
+                  <li>Экипировка для обучения</li>
+                  <li>Обучение серфингу 5 тренировок по 2 часа</li>
+                  <li>Страховка</li>
+                  <li>Вечеринка с угощениями и дискотекой</li>
+                  <li>Авиа перелет Тенерифе -Лансароте - Тенерифе</li>
+                  <li>Завтраки на вилле</li>
+               </ul>
+                  <div class="price__item-sum">
+                     950
+                     <span>$</span>
+                  </div>
+            </div>
+            <div class="price__item">
+               <div class="price__item-title">
+                  Профи
+               </div>
+               <ul class="price__item-menu">
+                  <li>Проживание на вилле 6 ночей</li>
+                  <li>Номер категории стандарт</li>
+                  <li>Экипировка для обучения</li>
+                  <li>Обучение серфингу 5 тренировок по 2 часа</li>
+                  <li>Страховка</li>
+                  <li>Вечеринка с угощениями и дискотекой</li>
+                  <li>Авиа перелет Тенерифе -Лансароте - Тенерифе</li>
+                  <li>Завтраки и ужины на вилле</li>
+               </ul>
+               <div class="price__item-sum">
+                  1450
+                  <span>$</span>
+               </div>
+            </div>
          </div>
       </div>
    </section>
 
+   <section class="section--map">
+         <div class="map">   
+               <a href="https://goo.gl/maps/Y3LbLmGSHGVvM4f56" target="_blank">
+                  <img src="images/map/Pin.svg" alt="" class="map__pin">
+               </a>
+         </div>
+   </section>
+
+   <section class="connection" id="connection">
+      <div class="container">
+         <div class="connection__title title">
+            ОСТАВИТЬ ЗАЯВКУ
+         </div>
+         <div class="connection__inner">
+            <form class="connection__form">
+               <input type="text" placeholder="Имя">
+               <input type="text" placeholder="Телефон">
+               <textarea placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
+               <button type="submit">отправить</button>
+            </form>
+            <div class="connection__contact">
+               <div class="contact__question">
+                  Есть вопрос?
+                  Вы можете связаться с нами:
+               </div>
+               <div class="contact__tlf">
+                  WhatsApp, Viber, Telegram
+                  <a href="tel:+34674863788">+3 467 486-37-88</a>
+               </div>
+               <address class="contact__address">
+                  Avenida grandes playas 79,
+                  Corralejo la Oliva Fuerteventura,
+                  Spain. 35660
+               </address>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="social">
+      <div class="container">
+         <div class="social__inner">
+            <div class="social__item">
+               <a href="#">INSTAGRAM</a>
+            </div>
+            <div class="social__item">
+               <a href="#">FACEBOOK</a>
+            </div>
+            <div class="social__item">
+               <a href="#">YOUTUBE</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__logo">
+            <a href="#">
+               <img src="images/header/logo.png" alt="">
+            </a>
+         </div>
+      </div>
+   </footer>
 
 
 
