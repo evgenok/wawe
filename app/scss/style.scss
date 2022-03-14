@@ -26,6 +26,9 @@
 
   cursor: pointer;
   padding: 9px 2px;
+  position: absolute;
+  top: 35px;
+  right: 15px;
 }
 
 .burger__item{
@@ -498,8 +501,6 @@
    background-size: cover;
    position: relative;
 }
-.map__title {
-}
 .map__pin {
    position: absolute;
    top: 15%;
@@ -565,8 +566,6 @@
 .contact__tlf a:hover {
    text-decoration: underline;
 }
-.contact__address {
-}
 
 .social {
    padding: 200px 0;
@@ -597,3 +596,5 @@
    justify-content: center;
    align-items: center;
 }
+
+@import "media.scss";
