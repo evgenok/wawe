@@ -4,6 +4,7 @@
    }
    .peak {
       background: none;
+      padding-bottom: 0;
    }
    .peak__inner {
       margin-right: 0;
@@ -19,7 +20,7 @@
    }
 }
 @media (max-width: 1150px) {
-   .text{
+   .text {
       font-size: 17px;
    }
    .burger {
@@ -56,6 +57,16 @@
       font-size: 158px;
       line-height: 140px;
    }
+   .about__content {
+      display: block;
+   }
+   .about__text {
+      margin-right: 0;
+      width: 100%;
+   }
+   .about__text p {
+      margin-bottom: 20px;
+   }
    .service__inner {
       flex-wrap: wrap;
       justify-content: center;
@@ -74,6 +85,44 @@
    .service__item-title {
       margin-bottom: 49px;
    }
+   .team__inner,
+   .price__inner {
+      display: block;
+   }
+   .team__item {
+      margin: 0 auto 30px;
+      width: 330px;
+   }
+   .price__item {
+      margin: 0 auto 30px;
+      max-width: 500px;
+      width: 100%;
+   }
+}
+@media (max-width: 768px) {
+   .service__stat {
+      flex-wrap: wrap;
+   }
+   .stat__bar {
+      width: 100%;
+   }
+   .stat__text {
+      margin-top: 25px;
+   }
+   .slider__content {
+      flex-wrap: wrap;
+   }
+   .slider__item {
+      max-width: 400px;
+   }
+   .statistic__inner {
+      flex-wrap: wrap;
+   }
+   .statistic__item {
+      display: block;
+      width: 50%;
+      margin: 0;
+   }
 }
 
 @media (max-width: 600px) {
@@ -87,5 +136,50 @@
    .header__subtitle {
       font-size: 19px;
       line-height: 20px;
+   }
+   .price__title,
+   .team__title,
+   .connection__title {
+      margin-bottom: 70px;
+   }
+   .about__text p {
+      height: 130px;
+   }
+   .stat__bar-item {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .stat__bar-item span {
+      margin-right: 10px;
+   }
+   .video__fancy {
+      height: 300px;
+   }
+}
+
+@media (max-width: 485px) {
+   .title {
+      font-size: 33px;
+      line-height: 42px;
+   }
+   .about__text p {
+      height: 160px;
+   }
+   .service__item {
+      margin-bottom: 70px;
+   }
+}
+
+@media (max-width: 424px) {
+   .about__text p {
+      height: 190px;
+   }
+}
+@media (max-width: 360px) {
+   .stat__bar {
+      margin-top: 30px;
+   }
+   .about__text p {
+      height: 240px;
    }
 }

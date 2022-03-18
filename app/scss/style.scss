@@ -168,9 +168,6 @@
    padding: 200px 0;
    background-color: $bg;
 }
-.service__title::after {
-   right: 20%;
-}
 
 .service__inner {
    display: flex;
@@ -279,9 +276,6 @@
 .peak__inner-title {
    padding-top: 50px;
 }
-.peak__inner-title::after {
-   right: -10%;
-}
 .peak__inner-text {
    padding-bottom: 210px;
 }
@@ -387,6 +381,7 @@
    line-height: 75px;
    color: $text;
    margin: 0 50px;
+   text-align: center;
 }
 .statistic__item-text {
    display: block;
