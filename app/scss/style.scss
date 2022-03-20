@@ -19,49 +19,49 @@
    padding-top: 35px;
    padding-right: 224px;
 }
-.burger{
-  display: none;
-  background: none;
-  border: none;
+.burger {
+   display: none;
+   background: none;
+   border: none;
 
-  cursor: pointer;
-  padding: 9px 2px;
-  position: absolute;
-  top: 35px;
-  right: 15px;
+   cursor: pointer;
+   padding: 9px 2px;
+   position: absolute;
+   top: 35px;
+   right: 15px;
 }
 
-.burger__item{
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
+.burger__item {
+   display: block;
+   width: 30px;
+   height: 3px;
+   background-color: #fff;
 
-  font-size: 0;
-  color: transparent;
+   font-size: 0;
+   color: transparent;
 
-  position: relative;
+   position: relative;
 }
 
 .burger__item:before,
-.burger__item:after{
-  content: "";
-  width: 100%;
-  height: 100%;
+.burger__item:after {
+   content: "";
+   width: 100%;
+   height: 100%;
 
-  position: absolute;
-  left: 0;
-  z-index: 1;
+   position: absolute;
+   left: 0;
+   z-index: 1;
 
-  background-color: #fff;
+   background-color: #fff;
 }
 
-.burger__item:before{
-  top: -8px;
+.burger__item:before {
+   top: -8px;
 }
 
-.burger__item:after{
-  bottom: -8px;
+.burger__item:after {
+   bottom: -8px;
 }
 .menu__inner {
    display: flex;
@@ -487,7 +487,7 @@
 }
 
 .section--map {
-   padding: 200px;
+   padding: 200px 0;
 }
 .map {
    height: 640px;
@@ -509,8 +509,11 @@
    display: flex;
    justify-content: space-between;
 }
+.form {
+   width: 870px;
+}
 .connection__form {
-   min-width: 570px;
+   max-width: 100%;
    color: $green;
 }
 .connection__form input,
@@ -539,7 +542,7 @@
    cursor: pointer;
    background-color: #fff;
    text-transform: uppercase;
-   margin-top: 73px;
+   margin-top: 70px;
 }
 .connection__contact {
    font-size: 24px;
@@ -578,7 +581,7 @@
    color: $text;
    text-transform: uppercase;
 }
-.social__item a:hover{
+.social__item a:hover {
    color: $green;
 }
 

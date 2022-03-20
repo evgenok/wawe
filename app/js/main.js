@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
    $(".menu a").on("click", function (event) {
       //отменяем стандартную обработку нажатия по ссылке
       event.preventDefault();

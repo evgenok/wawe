@@ -227,10 +227,12 @@
    <section class="gallery section" id="gallery">
       <div class="container">
          <div class="gallery__title title">ГАЛЕРЕЯ</div>
-         <button class="gallery-btn" data-filter="all">ВСЕ</button>
-         <button class="gallery-btn" data-filter=".category-a">ТУРИСТЫ</button>
-         <button class="gallery-btn" data-filter=".category-b">ПРИРОДА</button>
-         <button class="gallery-btn" data-filter=".category-c">ПРОФИ</button>
+         <div class="gallery__inner-btn">
+            <button class="gallery-btn" data-filter="all">ВСЕ</button>
+            <button class="gallery-btn" data-filter=".category-a">ТУРИСТЫ</button>
+            <button class="gallery-btn" data-filter=".category-b">ПРИРОДА</button>
+            <button class="gallery-btn" data-filter=".category-c">ПРОФИ</button>
+         </div>
          <div class="gallery__inner">
             <div class="gallery__inner-top">
                <img class="gallery-img mix category-a" src="images/gallery/1.jpg" alt="">
@@ -402,15 +404,15 @@
             НАША КОМАНДА
          </div>
          <div class="team__inner">>
-               <div class="team__item">
-                  <img src="images/team/1.jpg" alt="">
-                  <div class="team__name">
-                     Mike
-                  </div>
-                  <div class="team__prof">
-                     Главный инстуктор
-                  </div>
+            <div class="team__item">
+               <img src="images/team/1.jpg" alt="">
+               <div class="team__name">
+                  Mike
                </div>
+               <div class="team__prof">
+                  Главный инстуктор
+               </div>
+            </div>
             <div class="team__item">
                <img src="images/team/2.jpg" alt="">
                <div class="team__name">
@@ -468,10 +470,10 @@
                   <li>Авиа перелет Тенерифе -Лансароте - Тенерифе</li>
                   <li>Завтраки на вилле</li>
                </ul>
-                  <div class="price__item-sum">
-                     950
-                     <span>$</span>
-                  </div>
+               <div class="price__item-sum">
+                  950
+                  <span>$</span>
+               </div>
             </div>
             <div class="price__item">
                <div class="price__item-title">
@@ -497,11 +499,11 @@
    </section>
 
    <section class="section--map section">
-         <div class="map">   
-               <a href="https://goo.gl/maps/Y3LbLmGSHGVvM4f56" target="_blank">
-                  <img src="images/map/Pin.svg" alt="" class="map__pin">
-               </a>
-         </div>
+      <div class="map">
+         <a href="https://goo.gl/maps/Y3LbLmGSHGVvM4f56" target="_blank">
+            <img src="images/map/Pin.svg" alt="" class="map__pin">
+         </a>
+      </div>
    </section>
 
    <section class="connection section" id="connection">
@@ -510,12 +512,14 @@
             ОСТАВИТЬ ЗАЯВКУ
          </div>
          <div class="connection__inner">
-            <form class="connection__form">
-               <input type="text" placeholder="Имя">
-               <input type="text" placeholder="Телефон">
-               <textarea placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
-               <button type="submit">отправить</button>
-            </form>
+            <div class="form">
+               <form class="connection__form">
+                  <input type="text" placeholder="Имя">
+                  <input type="text" placeholder="Телефон">
+                  <textarea placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
+                  <button type="submit">отправить</button>
+               </form>
+            </div>
             <div class="connection__contact">
                <div class="contact__question">
                   Есть вопрос?
